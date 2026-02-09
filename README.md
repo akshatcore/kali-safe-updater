@@ -8,10 +8,12 @@ Kali Safe Updater performs a **fully unattended system update** with automatic r
 
 ## Badges
 
-- **License:** MIT  
-- **Platform:** Kali Linux  
-- **Language:** Bash  
-- **Release:** v1.0.0  
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Kali%20Linux-blue)
+![Language](https://img.shields.io/badge/language-Bash-black)
+![Release](https://img.shields.io/badge/release-v1.0.0-orange)
+![Maintained](https://img.shields.io/badge/maintained-yes-brightgreen)
+![Status](https://img.shields.io/badge/status-stable-success)
 
 ---
 
@@ -101,7 +103,7 @@ These logs include:
 
 ## Release
 
-**Current version:** `v1.0.0`  
+**Current version:** `v1.0.0`
 
 Includes:
 
@@ -124,4 +126,4 @@ See the `LICENSE` file for details.
 ## Author
 
 **Akshat Tiwari**  
-GitHub: https://github.com/akshatcore/kali-safe-updater
+GitHub: https://github.com/akshatcore
