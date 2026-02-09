@@ -1,0 +1,13 @@
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Bash history or debug
+*.bak
