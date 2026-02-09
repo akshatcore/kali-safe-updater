@@ -124,4 +124,4 @@ See the `LICENSE` file for details.
 ## Author
 
 **Akshat Tiwari**  
-GitHub: https://github.com/akshatcore
+GitHub: https://github.com/akshatcore/kali-safe-updater
