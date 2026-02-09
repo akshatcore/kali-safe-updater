@@ -8,50 +8,50 @@ Kali Safe Updater performs a **fully unattended system update** with automatic r
 
 ## Badges
 
-![License](https://img.shields.io/badge/license-MIT-green)
-![Platform](https://img.shields.io/badge/platform-Kali%20Linux-blue)
-![Shell](https://img.shields.io/badge/language-Bash-informational)
-![Release](https://img.shields.io/github/v/release/akshatcore/kali-safe-updater)
+- **License:** MIT  
+- **Platform:** Kali Linux  
+- **Language:** Bash  
+- **Release:** v1.0.0  
 
 ---
 
 ## Features
 
 ### Automated System Maintenance
+
 - Repairs broken or interrupted packages  
 - Performs full **non-interactive APT upgrade**  
-- Cleans unused dependencies and cache  
-
-### Hardware & Kernel Stability
-- Synchronizes **kernel headers**  
-- Rebuilds **all DKMS modules**  
-- Handles GPU drivers:
+- Ensures **kernel header synchronization**  
+- Rebuilds **DKMS modules for all kernels**  
+- Handles **GPU driver installation**
   - NVIDIA  
   - AMD  
   - Intel  
+- Updates:
+  - APT packages  
+  - Flatpak applications  
+  - Snap packages  
 
-### Complete Application Updates
-- Updates **APT packages**
-- Updates **Flatpak apps**
-- Updates **Snap packages**
+---
 
 ### Safety & Reliability
+
 - Optional **Timeshift backup** before upgrade  
 - Detects **reboot requirement automatically**  
-- Creates **systemd resume service** after reboot  
+- Creates **systemd resume service after reboot**  
 - Continues update **without user login**  
-- Waits for package operations to finish safely  
-- Optional **automatic shutdown** after completion  
-- Full **timestamped logging** in user home directory  
+- Waits for **package operations to finish safely**  
+- Optional **automatic shutdown after completion**  
+- Full **timestamped logging in user home directory**
 
 ---
 
 ## Requirements
 
-- Kali Linux (rolling)
-- sudo privileges
-- systemd
-- Optional: Timeshift for backup support
+- Kali Linux (rolling)  
+- `sudo` privileges  
+- `systemd`  
+- Optional: **Timeshift** for backup support  
 
 ---
 
@@ -63,3 +63,65 @@ Clone the repository:
 git clone https://github.com/akshatcore/kali-safe-updater.git
 cd kali-safe-updater
 chmod +x kali-safe-updater.sh
+```
+
+---
+
+## Usage
+
+Run the updater with **root privileges**:
+
+```bash
+sudo ./kali-safe-updater.sh
+```
+
+> Root (`sudo`) access is required because the script performs  
+> system upgrades, kernel module rebuilds, driver installation,  
+> and system shutdown/reboot operations.
+
+---
+
+## Logging
+
+Logs are automatically saved in:
+
+```
+~/kali_update_<date>_<time>.log
+```
+
+These logs include:
+
+- Package repair output  
+- Upgrade progress  
+- DKMS rebuild status  
+- Driver installation results  
+- Reboot/shutdown actions  
+
+---
+
+## Release
+
+**Current version:** `v1.0.0`  
+
+Includes:
+
+- Full unattended upgrade workflow  
+- DKMS rebuild automation  
+- GPU driver handling  
+- Reboot-resume orchestration  
+- Safe shutdown logic  
+- Structured logging  
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
+See the `LICENSE` file for details.
+
+---
+
+## Author
+
+**Akshat Tiwari**  
+GitHub: https://github.com/akshatcore
